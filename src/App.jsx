@@ -9,18 +9,22 @@ import Cart from "./pages/cart/Cart";
 import Dashboard from "./pages/admin/dashboard/Dashboard";
 import NoPage from "./pages/nopage/NoPage";
 import MyState from "./context/data/myState";
+import ProductInfo from "./pages/productInfo/ProductInfo";
+import ScrollTop from "./components/scrollTop/ScrollTop";
 
 function App() {
   return (
     <>
       <MyState>
         <Router>
+          <ScrollTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/order" element={<Order />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/*" element={<NoPage />} />
+            <Route path="/productinfo" element={<ProductInfo />} />
           </Routes>
         </Router>
       </MyState>
