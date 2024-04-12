@@ -11,6 +11,7 @@ import NoPage from "./pages/nopage/NoPage";
 import MyState from "./context/data/myState";
 import ProductInfo from "./pages/productInfo/ProductInfo";
 import ScrollTop from "./components/scrollTop/ScrollTop";
+import CartPage from "./components/cart/CartPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/*" element={<NoPage />} />
             <Route path="/productinfo" element={<ProductInfo />} />
+            <Route path="/card" element={<CartPage />} />
           </Routes>
         </Router>
       </MyState>
