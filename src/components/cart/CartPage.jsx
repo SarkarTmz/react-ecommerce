@@ -1,5 +1,6 @@
 import Layout from "../../components/layout/Layout";
 import { Trash } from 'lucide-react'
+import Modal from '../modal/Modal'
 
 const products = [
     {
@@ -159,11 +160,7 @@ const CartPage = () => {
                                 </dl>
                                 <div className="px-2 pb-4 font-medium text-green-700">
                                 <div className="flex gap-4 mb-6">
-                                    <button
-                                        className="w-full px-4 py-3 text-center text-gray-100 bg-pink-600 border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
-                                    >
-                                        Buy now
-                                    </button>
+                                    <Modal />
                                 </div>
                                 </div>
                             </div>
