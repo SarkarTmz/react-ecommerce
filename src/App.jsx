@@ -12,6 +12,7 @@ import MyState from "./context/data/myState";
 import ProductInfo from "./pages/productInfo/ProductInfo";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import CartPage from "./components/cart/CartPage";
+import AllProduct from "./pages/allproduct/AllProduct";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/*" element={<NoPage />} />
             <Route path="/productinfo" element={<ProductInfo />} />
             <Route path="/card" element={<CartPage />} />
+            <Route path="/allproduct" element={<AllProduct />} />
           </Routes>
         </Router>
       </MyState>
